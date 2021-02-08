@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Banking System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body onload="loader()">
+    <div id="loading"></div>
+    <!-- Header -->
+    <div id="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h1 style="padding-right: 20px; font-size: 1.7rem;">ONLINE BANKING SYSTEM</h1>
+            </div>
+        </nav>
+    </div>
+    <!-- Section -->
+    <div class="container">
+        <div class="row" style="margin-top: 70px;">
+            <div style="margin: auto; text-align: center; padding: 0;" class="col-md-6 " data-aos="fade-up">
+                <h1><span style="font-weight: bold; color: #007bff;">WELCOME HOME</span></h1>
+                <p><span style="font-weight: bolder; color: #007bff;">TRANSFER MONEY </span>from here to there, and to
+                    anywhere</p>
+                <button class="btn btn-primary" onclick="location.href = './customers.html';">CUSTOMERS
+                    DETAILS</button>
+                <button class="btn btn-primary" onclick="location.href = './transfer.html';">TRANSFER
+                    MONEY</button>
+            </div>
+            <div class="col-md-6" data-aos="fade-left">
+                <img src="assets/transfer.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">Copyright® 2021 <span style="font-weight: bold;">Online Banking System</span> Made By Faizan
+        Khan
+    </div>
+
+
+    <!-- spalsh screen js -->
+    <script>
+        var preloader = document.getElementById("loading");
+        function loader() { preloader.style.display = 'none'; }
+    </script>
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- AOS Data -->
+    <script>
+        AOS.init({
+            duration: 700,
+        });
+    </script>
+</body>
+
+</html>
